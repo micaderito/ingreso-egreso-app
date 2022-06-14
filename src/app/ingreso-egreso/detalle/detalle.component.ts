@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.reducer';
 import { IngresoEgreso } from '../../models/ingreso-egreso.model';
-import { Subscription } from 'rxjs';
+import { filter, Subscription } from 'rxjs';
 import { IngresoEgresoService } from '../../services/ingreso-egreso.service';
 import Swal from 'sweetalert2';
 import { AppStateWithIngreso } from '../ingreso-egreso.reducer';
@@ -21,6 +21,9 @@ export class DetalleComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.ingresosEgresosSubs =  this.store.select('ingresosEgresos')
+    .pipe(
+      filter( ingresoEgreso => ingresoEgreso != null)
+    )
       .subscribe(({items}) => this.ingresosEgresos = items);
   }
 

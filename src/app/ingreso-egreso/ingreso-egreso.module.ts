@@ -25,7 +25,7 @@ import { ingresoEgresoReducer } from './ingreso-egreso.reducer';
   imports: [
     CommonModule,
     ReactiveFormsModule, 
-    StoreModule.forFeature('ingresoEgreso', ingresoEgresoReducer),
+    StoreModule.forFeature('ingresosEgresos', ingresoEgresoReducer),
     NgChartsModule,
     SharedModule,
     DashboardRoutesModule 
