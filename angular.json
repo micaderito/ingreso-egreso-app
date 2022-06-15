@@ -6,7 +6,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "ingresoEgresoApp": {
+        "micash": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -23,7 +23,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/ingresoEgresoApp",
+                        "outputPath": "dist/micash",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "ingresoEgresoApp:build:production"
+                            "browserTarget": "micash:build:production"
                         },
                         "development": {
-                            "browserTarget": "ingresoEgresoApp:build:development"
+                            "browserTarget": "micash:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "ingresoEgresoApp:build"
+                        "browserTarget": "micash:build"
                     }
                 },
                 "test": {
@@ -110,7 +110,7 @@
                     "options": {
                         "prerender": false,
                         "ssr": false,
-                        "browserTarget": "ingresoEgresoApp:build:production",
+                        "browserTarget": "micash:build:production",
                         "firebaseProject": "ingreso-egreso-app-mdr",
                         "firebaseHostingSite": "ingreso-egreso-app-mdr"
                     }
@@ -118,5 +118,5 @@
             }
         }
     },
-    "defaultProject": "ingresoEgresoApp"
+    "defaultProject": "micash"
 }
