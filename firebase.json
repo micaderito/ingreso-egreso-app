@@ -1,7 +1,7 @@
 {
     "hosting": {
-        "target": "micash",
-        "public": "dist/micash",
+        "target": "ingresoEgresoApp",
+        "public": "dist/ingresoEgresoApp",
         "ignore": [
             "**/.*"
         ],

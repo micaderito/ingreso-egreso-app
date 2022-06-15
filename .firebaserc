@@ -2,7 +2,7 @@
   "targets": {
     "ingreso-egreso-app-mdr": {
       "hosting": {
-        "micash": [
+        "ingresoEgresoApp": [
           "ingreso-egreso-app-mdr"
         ]
       }
